@@ -1,0 +1,95 @@
+@media only screen and (max-width: 570px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    } 
+    .aside{
+        flex: 0 0 0%;
+        width: 100vw;
+        height: 90px;
+        background-size: cover;
+        background-position: top;
+        background-origin: content-box;
+        margin: 0;
+    }
+    .main{
+        flex: 0 0 0%;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 0;
+    } 
+    form{
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    
+    .border-contain{
+        width: 100%;
+        // margin: 30px auto;
+        justify-content:space-around;
+    }
+        .border{
+            width: 40%;
+            margin: 0;
+        }
+  
+    .section-one,.section-two{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .button_section{
+        // align-items: flex-start;
+        margin: 2px;
+        justify-content: space-around;
+
+     
+    .linkdin,.google{
+        padding: 1em 2em;
+        margin: 5px;
+    }
+}
+    .submit{
+        align-self: center;
+    }
+
+ }
+ @media only screen and (max-width:1024px)  and (min-width: 570px){
+    .aside{
+        width: 40%;
+        height: 130vh !important; 
+        
+    }
+    .section-one,.section-two{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .border-contain{
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    .border{
+        width: 40%;
+        margin-right: 10px;
+        margin-left: 10px ;
+    }
+
+.button_section{
+    width: 100%;
+    justify-content: space-around;
+
+}
+.linkdin,.google{
+padding: 1em 3.7em;
+// margin-left: 12px;
+}
+
+
+ }
+

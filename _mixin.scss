@@ -1,0 +1,16 @@
+@mixin padding-large{
+    padding: 1em 5em;
+}
+@mixin padding-small{
+    padding: 1em 2em;
+}
+@mixin padding-medium{
+    padding: 1em 4em;
+
+}
+@mixin background-image($url, $repeat, $position, $size){
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}

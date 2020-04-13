@@ -1,0 +1,203 @@
+@import "media.scss";
+@import "mixin.scss";
+@import "global.scss";
+
+  .container{
+      display: flex;
+      max-width: 100vw;
+      min-height: 100vh;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+  }
+  .aside{
+    @include background-image("img/background.jpeg", no-repeat, top center, cover);
+    background-origin: border-box;
+    display: flex;
+    flex: 0 0 40%;
+    width: 40%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content:stretch;
+    align-items: center;
+    align-content: stretch;
+  }
+  .main{
+    display: flex;
+    flex: 0 0 60%;
+    width: 60%;
+    height: 100%;
+    flex-grow: 9999;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+.section-one,.section-two{
+    flex: 0 0 0%;
+    width: 60%;
+    margin:  10px auto;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_section{
+    display: flex;
+    flex: 0 0 0%;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.google, .linkdin{
+    flex: 0 0 0%;
+    @include padding-large;
+    background-color: #4285F4;
+    border-radius: 5%;
+    color: white;
+    font-size: 14px;
+    margin-left: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+
+    
+}
+
+.linkdin{
+    background-color: #0C90C1;
+}
+
+
+.left{
+    display: flex;
+    align-self: flex-end;
+}
+.submit{
+    padding: 1em 3em;
+    background-color: #EA4C89;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+.border-contain{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.border{
+    width: 43%;
+    margin-right: 10px;
+    margin-left: 10px ;
+    display: flex;
+    flex-flow: row nowrap;
+    border-top: 1px solid #E8E7E7;
+    border-bottom:0;
+    border-left:0;
+    border-right: 0;
+}
+
+ 
+@media only screen and (max-width: 570px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    } 
+    .aside{
+        flex: 0 0 0%;
+        width: 100vw;
+        height: 90px;
+        background-size: cover;
+        background-position: top;
+        background-origin: content-box;
+        margin: 0;
+    }
+    .main{
+        flex: 0 0 0%;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 0;
+    } 
+    form{
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    
+    .border-contain{
+        width: 100%;
+        // margin: 30px auto;
+        justify-content:space-around;
+    }
+        .border{
+            width: 40%;
+            margin: 0;
+        }
+  
+    .section-one,.section-two{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .button_section{
+        // align-items: flex-start;
+        margin: 2px;
+        justify-content: space-around;
+
+     
+    .linkdin,.google{
+        @include padding-small;
+        // padding: 1em 2em;
+        margin: 5px;
+    }
+}
+    .submit{
+        align-self: center;
+    }
+
+ }
+ @media only screen and (max-width:1440px)  and (min-width: 570px){
+    .aside{
+        width: 40%;
+        height: 130vh !important; 
+        
+    }
+    .section-one,.section-two{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .border-contain{
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    .border{
+        width: 40%;
+        margin-right: 10px;
+        margin-left: 10px ;
+    }
+
+.button_section{
+    width: 100%;
+    justify-content: space-around;
+
+}
+.linkdin,.google{
+    @include padding-medium;
+}
+
+
+ }
+
